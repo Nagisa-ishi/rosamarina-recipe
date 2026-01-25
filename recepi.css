@@ -1,0 +1,95 @@
+/* ベース設定 */
+body {
+  background-color: #fff8f5; 
+  color: #333;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* タイトル */
+.main-title {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 500; /* Medium */
+  font-size: 2.4rem;
+  color: #A4342D;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.title-setouchi {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 500;
+  letter-spacing: 0.15em; /* ← 字間を広げる */
+}
+
+.title-rosamarina {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 500;
+  letter-spacing: 0.12em; /* ← 少し控えめに広げる */
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+/* レシピ一覧セクション */
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* レシピカード */
+.recipe-card {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.recipe-card h2 {
+  font-size: 1.1rem;
+  margin: 0.8rem 1rem;
+  color: #A4342D;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #A4342D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-card a:hover {
+  text-decoration: underline;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #999;
+  background-color: #f5eae6;
+}
