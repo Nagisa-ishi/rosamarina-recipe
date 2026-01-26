@@ -7,34 +7,34 @@ body {
   padding: 0;
 }
 
+a {
+  margin-bottom: 0 !important;
+}
 
-/* タイトル */
+
+/* タイトル全体を左揃えに */
 .main-title {
   font-family: 'Abhaya Libre', serif;
-  font-weight: 500; /* Medium */
+  font-weight: 500;
   font-size: 2.4rem;
   color: #A4342D;
-  text-align: center;
-  margin-top: 2rem;
+  text-align: left;   /* ← 左揃えに変更 */
+  margin: 3rem 0 1rem 2rem; /* 左に少し余白をつける */
+  line-height: 1.2;
 }
 
-.title-setouchi {
-  font-family: 'Abhaya Libre', serif;
-  font-weight: 500;
-  letter-spacing: 0.15em; /* ← 字間を広げる */
-}
-
+/* SETOUCHI と ROSAMARINA Recepi を同じ大きさに */
+.title-setouchi,
 .title-rosamarina {
-  font-family: 'Abhaya Libre', serif;
-  font-weight: 500;
-  letter-spacing: 0.12em; /* ← 少し控えめに広げる */
+  display: block;
+  font-size: 2.4rem;     /* ← 同じ大きさに統一 */
+  letter-spacing: 0.12em; /* ← 字間も揃える */
+  margin-bottom: 0.3rem;
 }
 
-.subtitle {
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #666;
+/* Recipe を後ろにつけるための調整 */
+.title-rosamarina span {
+  font-size: 2.4rem;
 }
 
 /* レシピ一覧セクション */
@@ -71,6 +71,14 @@ body {
   font-size: 1.1rem;
   margin: 0.8rem 1rem;
   color: #A4342D;
+}
+
+/* レシピ名を一行に収める */
+.recipe-card h2 {
+  font-size: 0.95rem;   /* ← 少し小さくする */
+  white-space: nowrap;      /* ← 強制的に1行にする */
+  overflow: hidden;         /* ← はみ出しを隠す */
+  text-overflow: ellipsis;  /* ← 長すぎる場合は「…」にする */
 }
 
 .recipe-card a {

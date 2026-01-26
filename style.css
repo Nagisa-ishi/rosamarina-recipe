@@ -59,12 +59,12 @@ Recipe
 border-bottom に「dotted」を指定して点線にする
 */
 .flex .recipe .ingredient-list dt {
-  width: 85%;
+  width: 50%;
   border-bottom: dotted 1px #ccc;
   padding: 6px 0;
 }
 .flex .recipe .ingredient-list dd {
-  width: 15%;
+  width: 50%;
   border-bottom: dotted 1px #ccc;
   padding: 6px 0;
   text-align: right;
